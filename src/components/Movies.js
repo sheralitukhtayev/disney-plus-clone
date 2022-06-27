@@ -38,13 +38,13 @@ function Movies() {
 export default Movies
 
 const Container = styled.div `
-    
+    overflow-x: hidden;
 
 `
 
 const Content = styled.div `
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 50px;
     grid-template-columns: repeat(4, minmax(0, 1fr))
 
 `
@@ -66,7 +66,7 @@ const Wrap = styled.div `
     }
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.0005);
         border-color: rgba(249, 249, 249, 0.8);
         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
